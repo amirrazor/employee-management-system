@@ -59,37 +59,7 @@ GET	/api/employees/{id}	Get employee by ID	-	Employee details
 PUT	/api/employees/{id}	Update employee	{"name": "Jane Doe", "email": "jane.doe@example.com", "position": "Manager", "salary": 90000}	200 OK
 DELETE	/api/employees/{id}	Soft delete employee	-	204 No Content
 
-## **Project Structure**
 
-
-src/main/java/com/example/employeemanagement
-├── config
-│   ├── AppConfig.java
-│   ├── SecurityConfig.java
-├── controller
-│   ├── AuthController.java
-│   ├── EmployeeController.java
-├── dto
-│   ├── EmployeeDTO.java
-│   ├── ResponseDTO.java
-├── entity
-│   ├── Employee.java
-├── exception
-│   ├── GlobalExceptionHandler.java
-│   ├── ResourceNotFoundException.java
-├── mapper
-│   ├── EmployeeMapper.java
-├── repository
-│   ├── EmployeeRepository.java
-├── security
-│   ├── JwtAuthenticationFilter.java
-│   ├── JwtUtils.java
-├── service
-│   ├── impl
-│   │   ├── EmployeeServiceImpl.java
-│   ├── CustomUserDetailsService.java
-│   ├── EmployeeService.java
-├── EmployeeManagementSystemApplication.java
 ## **Known Issues**
 None at the moment. Please report issues via GitHub.
 ## **Future Enhancements**
